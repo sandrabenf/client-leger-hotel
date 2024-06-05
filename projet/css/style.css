@@ -1,0 +1,618 @@
+*,
+
+/* Style général du header */
+header {
+  background-color: #dfc0c0; /* Couleur de fond du header */
+  color: white; /* Couleur du texte */
+  padding: 15px; /* Espacement intérieur du header */
+}
+
+/* Style des liens dans la barre de navigation */
+nav a {
+  color: white; /* Couleur du texte des liens */
+  text-decoration: none; /* Suppression du soulignement des liens */
+  margin-right: 20px; /* Espacement entre les liens */
+  font-weight: bold; /* Police en gras */
+}
+
+nav a:hover {
+  text-decoration: underline; /* Soulignement des liens au survol */
+}
+
+/* Mise en page des éléments dans la barre de navigation */
+nav {
+  display: flex; /* Affichage en flexbox */
+  justify-content: space-between; /* Répartir les éléments de manière égale */
+  align-items: center; /* Centrer verticalement les éléments */
+}
+
+/* Style spécifique pour les liens de déconnexion */
+nav a i.fa-power-off {
+  margin-left: 10px; /* Espacement à gauche de l'icône */
+}
+
+/* Style pour le lien de l'utilisateur connecté */
+nav a:last-child {
+  margin-right: 0; /* Pas de marge à droite pour le dernier lien */
+}
+
+/* Media query pour rendre le header réactif */
+@media (max-width: 768px) {
+  nav {
+      flex-direction: column; /* Mettre les éléments en colonne sur les petits écrans */
+  }
+  nav a {
+      margin-bottom: 10px; /* Espacement entre les liens en mode colonne */
+      margin-right: 0; /* Pas de marge à droite en mode colonne */
+  }
+}
+
+
+
+
+
+
+/*ajout chambre*/
+/* Style général pour le contenu de la page */
+.container {
+  max-width: 800px; /* Largeur maximale du conteneur */
+  margin: 0 auto; /* Centrage horizontal du conteneur */
+  padding: 20px; /* Espacement intérieur du conteneur */
+  background-color: #f8f9fa; /* Couleur de fond du conteneur */
+  border-radius: 10px; /* Coins arrondis du conteneur */
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Ombre légère autour du conteneur */
+}
+
+/* Style pour les étiquettes des champs de formulaire */
+.form-label {
+  font-weight: bold; /* Police en gras pour les étiquettes */
+}
+
+/* Style pour les champs de formulaire */
+.form-control {
+  width: 100%; /* Largeur pleine des champs de formulaire */
+  padding: 10px; /* Espacement intérieur des champs de formulaire */
+  margin-bottom: 15px; /* Espacement entre les champs de formulaire */
+  border: 1px solid #ced4da; /* Bordure des champs de formulaire */
+  border-radius: 5px; /* Coins arrondis des champs de formulaire */
+}
+
+/* Style pour le bouton de soumission du formulaire */
+.btn-primary {
+  background-color: #d5a1a1; /* Couleur de fond du bouton */
+  color: white; /* Couleur du texte du bouton */
+  padding: 10px 20px; /* Espacement intérieur du bouton */
+  border: none; /* Pas de bordure pour le bouton */
+  border-radius: 5px; /* Coins arrondis du bouton */
+  cursor: pointer; /* Curseur de type pointer au survol */
+}
+
+.btn-primary:hover {
+  background-color: #ffffff; /* Couleur de fond du bouton au survol */
+}
+
+/* Style pour les options du sélecteur */
+.form-select {
+  width: 100%; /* Largeur pleine du sélecteur */
+  padding: 10px; /* Espacement intérieur du sélecteur */
+  margin-bottom: 15px; /* Espacement entre les sélecteurs */
+  border: 1px solid #ced4da; /* Bordure du sélecteur */
+  border-radius: 5px; /* Coins arrondis du sélecteur */
+}
+
+/* Style pour le formulaire lorsqu'il est en mode réactif */
+@media (max-width: 768px) {
+  .container {
+      padding: 10px; /* Réduire l'espacement intérieur pour les petits écrans */
+  }
+}
+
+
+
+/* connexion */
+
+/* Style général pour le contenu de la page */
+.container {
+  max-width: 400px; /* Largeur maximale du conteneur */
+  margin: 0 auto; /* Centrage horizontal du conteneur */
+  padding: 20px; /* Espacement intérieur du conteneur */
+  background-color: #f8f9fa; /* Couleur de fond du conteneur */
+  border-radius: 10px; /* Coins arrondis du conteneur */
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Ombre légère autour du conteneur */
+}
+
+/* Style pour les étiquettes des champs de formulaire */
+.form-label {
+  font-weight: bold; /* Police en gras pour les étiquettes */
+}
+
+/* Style pour les champs de formulaire */
+.form-control {
+  width: 100%; /* Largeur pleine des champs de formulaire */
+  padding: 10px; /* Espacement intérieur des champs de formulaire */
+  margin-bottom: 15px; /* Espacement entre les champs de formulaire */
+  border: 1px solid #ced4da; /* Bordure des champs de formulaire */
+  border-radius: 5px; /* Coins arrondis des champs de formulaire */
+}
+
+/* Style pour le bouton de soumission du formulaire */
+.btn-primary {
+  background-color: #ceabab; /* Couleur de fond du bouton */
+  color: white; /* Couleur du texte du bouton */
+  padding: 10px 20px; /* Espacement intérieur du bouton */
+  border: none; /* Pas de bordure pour le bouton */
+  border-radius: 5px; /* Coins arrondis du bouton */
+  cursor: pointer; /* Curseur de type pointer au survol */
+}
+
+.btn-primary:hover {
+  background-color: #d5a1a1; /* Couleur de fond du bouton au survol */
+}
+
+/* Style pour le formulaire lorsqu'il est en mode réactif */
+@media (max-width: 768px) {
+  .container {
+      padding: 10px; /* Réduire l'espacement intérieur pour les petits écrans */
+  }
+}
+
+
+
+/*page index*/
+
+/* Style général pour le contenu de la page */
+.container {
+  display: flex; /* Affichage en flexbox pour les cartes */
+  flex-wrap: wrap; /* Permettre le retour à la ligne des cartes si nécessaire */
+  justify-content: center; /* Centrer horizontalement les cartes */
+  padding: 20px; /* Espacement intérieur du conteneur */
+}
+
+/* Style pour les cartes de chambre */
+.card {
+  width: 18rem; /* Largeur fixe des cartes */
+  margin: 10px; /* Marge entre les cartes */
+  border-radius: 10px; /* Coins arrondis des cartes */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Ombre légère autour des cartes */
+}
+
+.card-img-top {
+  height: 200px; /* Hauteur fixe de l'image de la carte */
+  object-fit: cover; /* Ajuster la taille de l'image pour remplir le conteneur */
+  border-top-left-radius: 10px; /* Coins arrondis de l'image en haut à gauche */
+  border-top-right-radius: 10px; /* Coins arrondis de l'image en haut à droite */
+}
+
+.card-body {
+  padding: 15px; /* Espacement intérieur du corps de la carte */
+}
+
+.card-text {
+  font-weight: bold; /* Police en gras pour le texte du corps de la carte */
+}
+
+.btn {
+  margin-top: 10px; /* Marge en haut du bouton */
+  width: 100%; /* Largeur pleine du bouton */
+}
+
+.btn-primary {
+  background-color: #d5a1a1; /* Couleur de fond du bouton */
+  color: white; /* Couleur du texte du bouton */
+  border: none; /* Pas de bordure pour le bouton */
+  border-radius: 5px; /* Coins arrondis du bouton */
+  cursor: pointer; /* Curseur de type pointer au survol */
+}
+
+.btn-primary:hover {
+  background-color: #d5a1a1 /* Couleur de fond du bouton au survol */
+}
+
+
+/* a propos*/
+
+/* Style général pour le corps de la page */
+body {
+  font-family: Arial, sans-serif; /* Police par défaut pour le texte */
+  background-color: #ffffff; /* Couleur de fond de la page */
+  color: #333; /* Couleur du texte principal */
+  margin: 0; /* Supprimer les marges par défaut */
+  padding: 0; /* Supprimer les espacements par défaut */
+}
+
+/* Style pour le conteneur global de la page À Propos */
+.about-container {
+  display: flex; /* Utilisation de flexbox pour aligner les éléments */
+  justify-content: center; /* Centrage horizontal des éléments */
+  align-items: center; /* Centrage vertical des éléments */
+  padding: 50px; /* Espacement intérieur du conteneur */
+}
+
+/* Style pour l'image "À Propos" */
+.about-image img {
+  width: 300px; /* Largeur de l'image */
+  height: auto; /* Hauteur automatique pour conserver les proportions */
+  border-radius: 10px; /* Coins arrondis de l'image */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Ombre légère autour de l'image */
+}
+
+/* Style pour le contenu textuel "À Propos" */
+.about-content {
+  max-width: 600px; /* Largeur maximale du contenu textuel */
+  margin-left: 50px; /* Marge à gauche du contenu par rapport à l'image */
+}
+
+.about-content h1 {
+  font-size: 36px; /* Taille de police pour le titre */
+  color: #b05559; /* Couleur du titre */
+  margin-bottom: 20px; /* Espacement en bas du titre */
+}
+
+.about-content p {
+  font-size: 18px; /* Taille de police pour le texte */
+  line-height: 1.6; /* Hauteur de ligne pour le texte */
+  color: #ffffff; /* Couleur du texte du paragraphe */
+}
+
+/* Media query pour ajuster le contenu en mode réactif */
+@media (max-width: 768px) {
+  .about-container {
+      flex-direction: column; /* Affichage en colonne pour les petits écrans */
+      align-items: flex-start; /* Alignement du contenu à gauche */
+  }
+
+  .about-image img {
+      width: 100%; /* Largeur pleine pour l'image sur les petits écrans */
+      margin-bottom: 20px; /* Espacement sous l'image */
+  }
+
+  .about-content {
+      margin-left: 0; /* Pas de marge à gauche pour le contenu sur les petits écrans */
+  }
+}
+
+
+/*page contacr*/
+/* Style général pour le contenu de la page Contact */
+body {
+  font-family: Arial, sans-serif; /* Police de caractères par défaut */
+  background-color: #f8f9fa; /* Couleur de fond */
+  color: #333; /* Couleur du texte principal */
+  padding: 20px; /* Espacement intérieur global */
+}
+
+/* Style pour le titre principal */
+h1 {
+  font-size: 36px; /* Taille de police du titre principal */
+  margin-bottom: 20px; /* Espacement en bas du titre */
+}
+
+/* Style pour les paragraphes de texte */
+p {
+  font-size: 18px; /* Taille de police des paragraphes */
+  line-height: 1.6; /* Hauteur de ligne pour le texte */
+  margin-bottom: 20px; /* Espacement en bas des paragraphes */
+}
+
+/* Style pour le formulaire de contact */
+#contact-form {
+  background-color: #fff; /* Couleur de fond du formulaire */
+  padding: 20px; /* Espacement intérieur du formulaire */
+  border-radius: 8px; /* Coins arrondis du formulaire */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Ombre légère autour du formulaire */
+}
+
+/* Style pour les étiquettes du formulaire */
+label {
+  display: block; /* Affichage en bloc pour chaque étiquette */
+  font-weight: bold; /* Texte en gras pour les étiquettes */
+  margin-bottom: 8px; /* Espacement en bas des étiquettes */
+}
+
+/* Style pour les champs de saisie du formulaire */
+input[type="text"],
+input[type="email"],
+textarea {
+  width: 100%; /* Largeur pleine des champs de saisie */
+  padding: 10px; /* Espacement intérieur des champs de saisie */
+  margin-bottom: 16px; /* Espacement en bas des champs de saisie */
+  border: 1px solid #ccc; /* Bordure fine autour des champs de saisie */
+  border-radius: 4px; /* Coins arrondis des champs de saisie */
+  box-sizing: border-box; /* Inclure la bordure dans la largeur totale */
+}
+
+/* Style pour le bouton d'envoi du formulaire */
+button[type="submit"] {
+  background-color: #007bff; /* Couleur de fond du bouton */
+  color: #fff; /* Couleur du texte du bouton */
+  padding: 12px 20px; /* Espacement intérieur du bouton */
+  border: none; /* Pas de bordure */
+  border-radius: 4px; /* Coins arrondis du bouton */
+  cursor: pointer; /* Curseur pointeur au survol */
+}
+
+/* Style pour le bouton d'envoi au survol */
+button[type="submit"]:hover {
+  background-color: #0056b3; /* Couleur de fond au survol */
+}
+
+
+/* details chambres*/
+/* Style général pour le contenu de la page détaillée de chambre */
+body {
+  font-family: Arial, sans-serif; /* Police de caractères par défaut */
+  background-color: #f8f9fa; /* Couleur de fond */
+  color: #333; /* Couleur du texte principal */
+  padding: 20px; /* Espacement intérieur global */
+}
+
+.container {
+  max-width: 800px; /* Largeur maximale du conteneur */
+  margin: 0 auto; /* Centrage horizontal */
+  background-color: #fff; /* Couleur de fond du conteneur */
+  padding: 20px; /* Espacement intérieur du conteneur */
+  border-radius: 8px; /* Coins arrondis du conteneur */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Ombre légère autour du conteneur */
+}
+
+.carousel-item img {
+  border-radius: 8px; /* Coins arrondis des images du carousel */
+}
+
+.card-text {
+  font-size: 18px; /* Taille de police du texte de la carte */
+  margin-bottom: 10px; /* Espacement en bas du texte de la carte */
+}
+
+form {
+  margin-top: 20px; /* Espacement en haut du formulaire */
+}
+
+form input[type="text"],
+form input[type="date"],
+form input[type="email"],
+form textarea {
+  width: 100%; /* Largeur pleine des champs de saisie */
+  padding: 10px; /* Espacement intérieur des champs de saisie */
+  margin-bottom: 16px; /* Espacement en bas des champs de saisie */
+  border: 1px solid #ccc; /* Bordure fine autour des champs de saisie */
+  border-radius: 4px; /* Coins arrondis des champs de saisie */
+  box-sizing: border-box; /* Inclure la bordure dans la largeur totale */
+}
+
+form button {
+  background-color: #007bff; /* Couleur de fond du bouton */
+  color: #fff; /* Couleur du texte du bouton */
+  padding: 12px 20px; /* Espacement intérieur du bouton */
+  border: none; /* Pas de bordure */
+  border-radius: 4px; /* Coins arrondis du bouton */
+  cursor: pointer; /* Curseur pointeur au survol */
+}
+
+form button:hover {
+  background-color: #0056b3; /* Couleur de fond au survol du bouton */
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+::before,
+::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+:root {
+  /* Colors */
+  --light-orange: #f2d0a9ff;
+  --almond: #f1e3d3ff;
+  --crimson: #dc143cff;
+
+  /* General */
+  --dark-base: #222;
+  --lighter-dark: #333;
+  --gray: #858585;
+  --light-gray: #d2d2d2;
+  --light-white: #f1f1f1;
+
+  /* Active */
+  --active-almond: #feecd7;
+  --active-light-white: #dedede;
+  --active-crimson: #c51337;
+
+  /* Fonts */
+  --base-font: Raleway, sans-serif;
+  --accent-font: Nunito sans, sans-serif;
+
+  /* Font-size */
+
+  --fs-12: 0.75rem;
+  --fs-14: 0.875rem;
+  --fs-16: 1rem;
+  --fs-18: 1.125rem;
+  --fs-20: 1.25rem;
+  --fs-22: 1.375rem;
+  --fs-24: 1.5rem;
+  --fs-26: 1.625rem;
+  --fs-40: 2.5rem;
+  --fs-42: 2.625rem;
+  --fs-64: 4rem;
+  --fs-72: 4.5rem;
+
+  /* shadows */
+  --light-solid-shadow: 0 2px 0px #111111cc;
+  --solid-shadow: 0 2px 0px #111;
+  --shadow-sm: 0 2px 4px rgba(17, 17, 17, 0.502);
+  --drop-shadow: 1px 1px 0px #1111114d;
+
+  /* gradients */
+  --striped-pinky: repeating-linear-gradient(
+      135deg,
+      rgba(106, 100, 100, 0.1) 0px,
+      rgba(106, 100, 100, 0.1) 2px,
+      transparent 2px,
+      transparent 4px
+    ),
+    linear-gradient(to right, #f3cdcd, #f4e0bb);
+  --light-orange-pinky: linear-gradient(to left, #fcd4d4, #f8d9a0);
+  --dark-right : linear-gradient(to bottom right, #252525, #383838);
+  --dark-left : linear-gradient(to bottom left, #252525, #383838);
+  --radial-white-beige:  radial-gradient(#f1f1f1, #f5f5dc);
+
+
+  /* borders */
+  --light-dark-border: 1px solid var(--lighter-dark);
+  --dark-thick-border: 2px solid var(--lighter-dark);
+}
+
+/* Global & utilities */
+
+body {
+  font-family: var(--base-font);
+  color: var(--dark-base);
+  background-color: var(--light-white);
+}
+
+button,
+input {
+  font-family: var(--base-font);
+}
+
+.container {
+  max-width: 1100px;
+  margin: 0 auto;
+}
+
+.main-heading {
+  font-size: var(--fs-72);
+  line-height: 1.1;
+  font-family: var(--accent-font);
+  color: var(--light-white);
+  font-weight: 900;
+  text-transform: uppercase;
+  margin-bottom: 20px;
+  text-shadow: 
+  0 3px 0px var(--lighter-dark), 
+  0 4px 0px var(--lighter-dark);
+}
+
+.heading-2 {
+  font-size: var(--fs-40);
+  font-family: var(--accent-font);
+}
+
+.surtitle,
+.heading-2 {
+  text-align: center;
+}
+
+.surtitle {
+  color: var(--gray);
+  font-size: var(--fs-18);
+  font-weight: 400;
+}
+
+@media (max-width: 768px) {
+  .main-heading {
+    font-size: var(--fs-42);
+  }
+  .heading-2 {
+    font-size: var(--fs-26);
+  }
+  .surtitle {
+    font-size: var(--fs-16);
+  }
+}
+
+
+
+
+
+/* footer */
+
+
+/* Style général du footer */
+footer {
+ 
+  color: #ffffff; /* Couleur du texte */
+  padding: 5px; /* Espacement intérieur du footer */
+  text-align: justify; /* Centrage du contenu du footer */
+}
+
+/* Style des sections du footer */
+.footer-section {
+  margin-bottom: 5px; /* Espacement en bas de chaque section du footer */
+}
+
+/* Style des titres des sections */
+.footer-section h4 {
+  font-size: 10px; /* Taille de police pour les titres des sections */
+  margin-bottom: 5px; /* Espacement en bas des titres */
+  color: #ffc107; /* Couleur du texte des titres */
+}
+
+/* Style des liens dans les sections */
+.footer-section a {
+  
+  color: #ffffff; /* Couleur du texte des liens */
+  text-decoration: none; /* Pas de soulignement du lien */
+  margin-bottom: 5px; /* Espacement en bas des liens */
+  transition: color 0.3s ease; /* Transition fluide pour la couleur au survol */
+}
+
+/* Style des liens au survol */
+.footer-section a:hover {
+  color: #ffc107; /* Couleur du texte au survol */
+}
+
+/* Style des paragraphes dans les sections */
+.footer-section p {
+  margin-bottom: 5px; /* Espacement en bas des paragraphes */
+  line-height: 1; /* Hauteur de ligne pour les paragraphes */
+}
+
+/* Style du texte de copyright */
+.footer-copyright {
+  font-size: 5px; /* Taille de police pour le texte de copyright */
+  margin-top: 10px; /* Espacement en haut du texte de copyright */
+  color: #ffffff; /* Couleur du texte du copyright */
+  border-top:  solid #ffffff; /* Bordure supérieure */
+  padding-top: 10px; /* Espacement intérieur en haut */
+}
+
+/* Médias queries pour une adaptation responsive */
+@media (max-width: 768px) {
+  /* Ajustement des styles pour les écrans plus petits */
+  footer {
+      padding: 30px 10px; /* Réduire l'espacement intérieur */
+  }
+  .footer-section {
+      margin-bottom: 15px; /* Réduire l'espacement en bas des sections */
+  }
+  .footer-section h4 {
+      font-size: 16px; /* Réduire la taille de police des titres */
+  }
+}
+
